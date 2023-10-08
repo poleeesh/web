@@ -3,7 +3,7 @@ from http.server import HTTPServer
 from server import Server
 
 HOST_NAME = 'localhost'
-PORT = 8080
+PORT = 8000
 
 
 if __name__ == "__main__":
