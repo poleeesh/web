@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <div class="start">
+    <h1>Оформление заказа</h1>
+    <p>Добро пожаловать!<br>Здесь вы можете выбрать товары и заполнить информацию о себе</p>
+    </div>
+        <div class="info">
+            <form action="order.php" method="post">
+    <h3>Ваше имя:</h3>
+    <input type="text" name="name" placeholder="Введите ваше имя" required/>
+    <input type="text" name="surname" placeholder="Введите вашу фамилию" required/><br>
+    <h3>Ваш адрес:</h3>
+    <p>Введите сюда адрес, вам нужно ввести страну, город, улицу и индекс:</p>
+    <input type="text" name="address" placeholder="Введите ваш адрес" required/>
+    <br><h3>Ваша контактная информация:</h3>
+    <input type="tel" name="phonenumber" placeholder="Ваш номер телефона" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br>
+    <small>Формат: 1-123-457-7890</small><br>
+                <h3>Ваш email:</h3>
+    <input type="email" name="email" placeholder="Ваш email"/><br>
+
+        <p><b>Выберите товары, которые собираетесь заказать: </b></p>
+        <p><input type="checkbox" name="bread" value="a"> Хлеб<Br>
+            <input type="checkbox" name="milk" value="b"> Молоко<Br>
+            <input type="checkbox" name="butter" value="c"> Масло<br>
+            <input type="checkbox" name="juice" value="d"> Сок<br>
+            <input type="checkbox" name="cheese" value="e"> Сыр<p/>
+                <input type="text" name="comment" placeholder="Ваш комментарий по заказу" size="100"/><br>
+<div class="end">
+    <p><input type="submit" value="Отправить"></p>
+    </div></form></div>
+</body>
+</html>
