@@ -5,7 +5,7 @@ import os
 class Server(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
-            self.path = '/ilogin.html'
+            self.path = '/login.html'
         try:
             split_path = os.path.splitext(self.path)
             request_extension = split_path[1]
