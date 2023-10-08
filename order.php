@@ -23,7 +23,7 @@ if (isset($_POST['bread'])) {
     $juice = "False";
  }
 
- if (isset($_POST['cheese'])) {
+ if (isset($_POST['chocolate'])) {
     $cheese = "True";
  } else {
     $cheese = "False";
@@ -43,7 +43,7 @@ $values = array(
     "butter" => $butter,
     "milk" => $milk,
     "juice" => $juice,
-    "cheese" => $cheese,
+    "cheese" => $chocolate,
 );
 
 $result = pg_insert($dbconn, "orders", $values) or die('Insert into database failed: ' . pg_last_error());
